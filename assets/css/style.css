@@ -28,11 +28,12 @@ header {
 header .menu-pc {
   background-color: #FF38C6;
   height: 7.5rem;
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   width: 100%;
+  z-index: 99;
 }
 header .menu-pc .logo-header {
   background-color: #FFFFFF;
@@ -79,4 +80,35 @@ header .title-header p {
   font-size: 1.87rem;
   color: #FF38C6;
   letter-spacing: 0.5rem;
+}
+/* MAIN */
+main #main-nuestra-historia {
+  position: relative;
+  margin-top: 50px;
+  height: 900px;
+}
+main #main-nuestra-historia .fondo-nuestra-historia {
+  background-color: #1A0BBF;
+  width: 100%;
+  height: 30rem;
+  z-index: -1;
+  position: absolute;
+  top: 280px;
+}
+main #main-nuestra-historia .contenido {
+  z-index: 2;
+  display: flex;
+}
+main #main-nuestra-historia .contenido .texto-nuetra-historia h4 {
+  font-size: 50px;
+  letter-spacing: 1rem;
+}
+main #main-nuestra-historia .contenido .texto-nuetra-historia h2 {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 70px;
+  letter-spacing: 1rem;
+}
+main #main-nuestra-historia .contenido img {
+  width: 600px;
+  margin-right: 150px;
 }

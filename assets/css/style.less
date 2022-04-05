@@ -45,11 +45,12 @@ header{
     .menu-pc{
         background-color: @fucsia;
         height: 7.5rem;
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: center;
         position: fixed;
         width: 100%;
+        z-index: 99;
 
         .logo-header{
             background-color: @texto-claro;
@@ -108,3 +109,48 @@ header{
         }
     }
 }
+
+/* MAIN */
+
+main{
+    
+    #main-nuestra-historia{
+        position: relative;
+        margin-top: 50px;
+        height: 900px;
+
+        .fondo-nuestra-historia{
+            background-color: @azul;
+            width: 100%;
+            height: 30rem;
+            z-index: -1;
+            position: absolute;
+            top: 280px;
+        }
+
+        .contenido{
+            z-index: 2;
+            display: flex;
+            .texto-nuetra-historia{
+                h4{
+                    font-size: 50px;
+                    letter-spacing: 1rem;
+                }
+                h2{
+                    font-family: @fuentes-tg;
+                    font-size: 70px;
+                    letter-spacing: 1rem;
+                }
+            }
+            img{
+                width: 600px;
+                margin-right: 150px;
+            }
+        }
+
+    
+    }
+
+    
+
+} 
