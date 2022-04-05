@@ -13,11 +13,70 @@ body {
   font-size: 16px;
   font-family: 'Urbanist', sans-serif;
   color: #000000;
+  width: 100%;
 }
 a {
   text-decoration: none;
+}
+/* HEADER */
+header {
+  background-image: url(https://images.unsplash.com/photo-1611245378682-a1cefebd294e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+  background-repeat: none;
+  background-position: center;
+  min-height: 60rem;
+}
+header .menu-pc {
+  background-color: #FF38C6;
+  height: 7.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+header .menu-pc .logo-header {
+  background-color: #FFFFFF;
+  width: 6.87rem;
+  height: 6.87rem;
+  margin-left: 3rem;
+  border-radius: 50%;
+  text-align-last: center;
+  padding: 1.25rem;
+}
+header .menu-pc .logo-header img {
+  width: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+header .menu-pc .nav-menu {
+  display: flex;
+}
+header .menu-pc .nav-menu li {
+  list-style: none;
+}
+header .menu-pc .nav-menu li a {
+  font-size: 1.56rem;
+  margin: 1.25rem;
+  color: #FFFFFF;
   transition: color 0.5s;
 }
-a:hover {
+header .menu-pc .nav-menu li a:hover {
   color: #4D113C;
+}
+header .title-header {
+  text-align: center;
+  position: relative;
+  top: 44.37rem;
+}
+header .title-header h1 {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 5.62rem;
+  color: #FFFFFF;
+  letter-spacing: 4rem;
+}
+header .title-header p {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 1.87rem;
+  color: #FF38C6;
+  letter-spacing: 0.5rem;
 }

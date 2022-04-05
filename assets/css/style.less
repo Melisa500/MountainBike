@@ -24,14 +24,87 @@ body{
     font-size: 16px;
     font-family: @fuentes-g;
     color: @texto-oscuro;
+    width: 100%;
 }
 
 a{
     text-decoration: none;
-    transition: color 0.5s;
-
-    &:hover{
-        color:@texto-hover-fucsia;
-    }
 }
 
+
+
+/* HEADER */
+
+header{
+    background-image: url(https://images.unsplash.com/photo-1611245378682-a1cefebd294e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    background-repeat: none;
+    background-position: center;
+    min-height: 60rem;
+    
+
+    .menu-pc{
+        background-color: @fucsia;
+        height: 7.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+
+        .logo-header{
+            background-color: @texto-claro;
+            width: 6.87rem;
+            height: 6.87rem;
+            margin-left: 3rem;
+            border-radius: 50%;
+            text-align-last: center;
+            padding: 1.25rem;
+            
+
+            img{
+                width: 5rem;
+                align-items: center;
+                justify-content: center;
+                
+            }
+        }
+       
+
+        .nav-menu{
+            display: flex;
+            li{
+                list-style: none;
+
+                a{
+                    font-size: 1.56rem;
+                    margin: 1.25rem;
+                    color: @texto-claro;
+                    transition: color 0.5s;
+
+                    &:hover{
+                        color: @texto-hover-fucsia;
+                    }
+                }
+            }
+        }
+    }
+
+    .title-header{
+        text-align: center;
+        position: relative;
+        top: 44.37rem;
+
+        h1{
+            font-family: @fuentes-tg;
+            font-size: 5.62rem;
+            color: @texto-claro;
+            letter-spacing: 4rem;
+        }
+        p{
+            font-family: @fuentes-tg;
+            font-size: 1.87rem;
+            color: @fucsia;
+            letter-spacing: 0.5rem;
+        }
+    }
+}
