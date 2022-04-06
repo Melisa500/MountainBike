@@ -45,7 +45,7 @@ header{
     .menu-pc{
         background-color: @fucsia;
         height: 7.5rem;
-        display: none;
+        display: flex;
         justify-content: space-between;
         align-items: center;
         position: fixed;
@@ -93,7 +93,7 @@ header{
     .title-header{
         text-align: center;
         position: relative;
-        top: 44.37rem;
+        top: 40rem;
 
         h1{
             font-family: @fuentes-tg;
@@ -114,10 +114,12 @@ header{
 
 main{
     
+    /* Nuestra Historia */
     #main-nuestra-historia{
         position: relative;
-        margin-top: 50px;
-        height: 900px;
+        margin-top: 3.12rem;
+        height: 56.25rem;
+        min-width: 75rem;
 
         .fondo-nuestra-historia{
             background-color: @azul;
@@ -125,32 +127,135 @@ main{
             height: 30rem;
             z-index: -1;
             position: absolute;
-            top: 280px;
+            top: 17.5rem;
+
+            .nuestra-historia-leer{
+                width: 40%;
+                color: @texto-claro;
+                font-size: 1.25rem;
+                text-align: center;
+                margin: 8rem;
+            }
         }
 
         .contenido{
             z-index: 2;
             display: flex;
+            position: absolute;
             .texto-nuetra-historia{
+                margin: 8rem;
+                margin-top: 4rem;
+                text-align: center;
                 h4{
-                    font-size: 50px;
+                    font-size: 2.2rem;
                     letter-spacing: 1rem;
                 }
                 h2{
                     font-family: @fuentes-tg;
-                    font-size: 70px;
+                    font-size: 3.2rem;
                     letter-spacing: 1rem;
                 }
             }
             img{
-                width: 600px;
-                margin-right: 150px;
+                width: 37.5rem;
+                position: relative;
+                left: 5rem;
+                margin-right: 50px;
             }
         }
 
     
     }
 
+    /* Rutas */
+    #rutas{
+        .rutas-descripcion{
+            width: 100%;
+            text-align: center;
+            h2{
+                font-size: 3.2rem;
+                letter-spacing: 1rem;
+                font-family: @fuentes-tg;
+                margin: 1.5rem;
+                margin-top: 4rem;
+            }
+            p{
+                font-size: 1.3rem;
+            }
+        }
+
+        .contenedor-tabs{
+            width: 90%;
+            max-width: 270rem;
+            padding: 2rem;
+            margin: auto;
+            border-radius: 20px;
+
+            .listas-rutas{
+                width: 100%;
+
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                margin: 1rem;
+            
+                .li{
+                    background-color: @texto-claro;
+                    color: @texto-hover-fucsia;
+                    padding: 1rem;
+                    margin: 0 2rem 0 0;
+                    list-style: none;
+                    font-size: 1.2rem;
+                    transition: color 1s;
+                    border-radius: 20px;
+                    transition: all .5s ease;
+
+                    
+                
+                    &:hover{
+                        color: @texto-hover-azul;
+                    } 
+                }
+                .activo{
+                    background-color: @texto-oscuro;
+                    color: @fucsia;
+                }
+            }
+            .subcontenedor-rutas{
+                min-height: 50vh;
+                background-color: rgba(243, 243, 243, 0.315);
+                position: relative;
+                box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+                border-radius: 20px;
+
+                .bloque{
+                    margin: 0.5rem;
+                    padding: 0.5rem;
+                    position: absolute;
+                    top: 0;
+                    display: flex;
+                    opacity: 0;
+                    justify-content: space-around;
+                    transition: all .5s ease;
+
+                    p{
+                        width: 30%;
+                        padding: 30px;
+                    }
+                    img{
+                        width: 40%;
+                        border-radius: 40px;
+                    }
+
+                }
+
+                .activo{
+                    opacity: 1;
+                }
+            }
+        }
+    }
     
 
 } 
