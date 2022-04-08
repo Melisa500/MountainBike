@@ -23,7 +23,7 @@ header {
   background-image: url(https://images.unsplash.com/photo-1611245378682-a1cefebd294e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
   background-repeat: none;
   background-position: center;
-  min-height: 60rem;
+  min-height: 61rem;
 }
 header .menu-pc {
   background-color: #FF38C6;
@@ -90,8 +90,8 @@ main {
 }
 main #main-nuestra-historia {
   position: relative;
-  margin-top: 3.12rem;
-  height: 56.25rem;
+  margin-top: 10rem;
+  min-height: 61rem;
   min-width: 75rem;
 }
 main #main-nuestra-historia .fondo-nuestra-historia {
@@ -129,10 +129,15 @@ main #main-nuestra-historia .contenido .texto-nuetra-historia h2 {
   letter-spacing: 1rem;
 }
 main #main-nuestra-historia .contenido img {
-  width: 37.5rem;
+  width: 30rem;
   position: relative;
+  top: 5rem;
   left: 5rem;
   margin-right: 3.125rem;
+  border-radius: 1.25rem;
+}
+main #rutas {
+  min-height: 61rem;
 }
 main #rutas .rutas-descripcion {
   width: 100%;
@@ -183,10 +188,10 @@ main #rutas .contenedor-tabs .listas-rutas .activo {
 }
 main #rutas .contenedor-tabs .subcontenedor-rutas {
   min-height: 50vh;
-  background-color: rgba(243, 243, 243, 0.315);
   position: relative;
-  box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.2);
   border-radius: 1.25rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 main #rutas .contenedor-tabs .subcontenedor-rutas .bloque {
   margin: 0.5rem;
