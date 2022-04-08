@@ -281,6 +281,10 @@ main #fotos .lightbox .abrir {
 main #fotos .img-activo {
   display: grid;
 }
+main #escribinos {
+  min-height: 30rem;
+  margin-bottom: 5rem;
+}
 main #escribinos h2 {
   font-family: 'Bowlby One SC', cursive;
   font-size: 3.2rem;
@@ -295,23 +299,70 @@ main #escribinos .formulario {
   background-color: rgba(243, 243, 243, 0.315);
   box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.2);
   border-radius: 1.25rem;
+  max-width: 40.625rem;
+  padding: 20px;
 }
 main #escribinos .formulario div {
   font-size: 1.25rem;
-  width: 200px;
+  width: 30rem;
   display: flex;
   flex-direction: column;
-  margin: 15px auto;
+  margin: 0.9375rem auto;
+}
+main #escribinos .formulario div .inputs-form input[type="text"],
+main #escribinos .formulario div .inputs-form input[type="email"],
+main #escribinos .formulario div .inputs-form textarea {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgba(255, 56, 198, 0.5);
+}
+main #escribinos .formulario div .inputs-form input[type="text"]:focus,
+main #escribinos .formulario div .inputs-form input[type="email"]:focus,
+main #escribinos .formulario div .inputs-form textarea:focus {
+  border-bottom: 2px solid #FF38C6;
+}
+main #escribinos .formulario div textarea {
+  max-width: 100%;
+  max-height: 10.25rem;
+  min-height: 5.125rem;
+  min-width: 100%;
+}
+main #escribinos .formulario div label {
+  letter-spacing: 0.3rem;
+}
+main #escribinos .formulario div label.label {
+  transition: all 0.3s ease;
+}
+main #escribinos .formulario div label.label.activo {
+  font-size: 0.75rem;
+  line-height: 2rem;
+  color: #4D113C;
+}
+main #escribinos .formulario input[type="submit"] {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 1.25rem;
+  width: 150px;
+  margin: auto;
+  background-color: #1A0BBF;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+  transform: all 0.3s ease;
+}
+main #escribinos .formulario input[type="submit"]:hover {
+  background: #000000;
+  color: #FF38C6;
 }
 /* FOOTER */
 footer {
   background-color: #1A0BBF;
   color: #FFFFFF;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 footer h2 {
   font-family: 'Bowlby One SC', cursive;
-  font-size: 3.2rem;
+  font-size: 3rem;
   letter-spacing: 1.25rem;
   text-align: center;
 }
@@ -321,14 +372,14 @@ footer .contenido-footer {
 }
 footer .contenido-footer .p {
   font-size: 1.25rem;
-  margin: 3rem;
+  margin: 1.5rem;
 }
 footer .contenido-footer .p p {
   margin-bottom: 0.5rem;
 }
 footer .contenido-footer .redes {
   display: flex;
-  margin: 3rem;
+  margin: 1.5rem;
 }
 footer .contenido-footer .redes .li-footer {
   list-style: none;
