@@ -8,7 +8,7 @@ const cerrar = document.querySelector('.cerrar')
 enlaces.forEach(( cadaEnlace , i ) => {
     enlaces[i].addEventListener('click', (e) => {
         e.preventDefault()
-        let ruta = e.srcElement.src
+        let ruta = e.target.src
         console.log(ruta)
 
         lightbox.classList.add('activo')
