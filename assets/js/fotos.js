@@ -10,15 +10,18 @@ enlaces.forEach(( cadaEnlace , i ) => {
         e.preventDefault()
         let ruta = e.target.src
         console.log(ruta)
+        console.log(grande)
 
         lightbox.classList.add('activo')
+        lightbox.style.display = 'grid'
         grande.setAttribute('src', ruta)
     })
 })
 
 cerrar.addEventListener( 'click', () => {
     lightbox.classList.remove('activo')
-})
+    lightbox.style.display = 'none'
+}) 
 
 
 
