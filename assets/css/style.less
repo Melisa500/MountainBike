@@ -32,6 +32,11 @@ a{
     text-decoration: none;
 }
 
+.error{
+    font-size: 1rem;
+    color: @azul;
+}
+
 
 
 /* HEADER */
@@ -333,6 +338,8 @@ main{
             display: none; /* grid */
             justify-content: center;
             align-items: center;
+            
+
 
            
 
@@ -343,6 +350,7 @@ main{
                 margin: 1rem;
                 transition: background-color .5s;
                 margin: auto;
+                
 
                 &:hover{
                     background-color: @fucsia;
@@ -356,12 +364,14 @@ main{
                 background: lightcyan;
                 margin: auto;
                 border-radius: 1.25rem;
+                
 
             }
         }
 
         .img-activo{
             display: grid;
+            
         }
 
     }
@@ -421,7 +431,7 @@ main{
                     letter-spacing: .3rem;
 
                     &.label{
-                        transition: all .3s ease;
+                        transition: all .7s ease;
 
                         &.activo{
                             font-size: 0.75rem;
@@ -733,6 +743,7 @@ footer{
     
     main #escribinos h2 {
         margin: 1rem;
+        font-size: 1rem;
     }
     
     main #escribinos .formulario {
@@ -742,6 +753,7 @@ footer{
     main #escribinos .formulario div {
         font-size: 1rem;
         width: 90%;
+        
     }
     
     footer h2 {
